@@ -3,5 +3,10 @@ project(PoleTrojkataw3D)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(PoleTrojkataw3D main.cpp)
+add_executable(PoleTrojkataw3D PoleTrojkataw3D.cpp)
 add_executable(odl3d odl3d.cpp)
+add_executable(max4digits max4digits.cpp)
+add_executable(nierownoscTrojkata nierownoscTrojkata.cpp)
+add_executable(przecinanieOkr przecinanieOkr.cpp)
+add_executable(sort3liczb sort3liczb.cpp)
+add_executable(wzHerona wzHerona.cpp)
