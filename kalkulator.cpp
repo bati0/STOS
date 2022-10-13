@@ -43,6 +43,8 @@ int main(){
                         cout << "Nie mozna dzielic przez zero";
                         break;
                     }
+                default:
+                    cout << znak << "bledna operacja"
 
             }
         } else {
