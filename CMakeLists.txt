@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.23)
-project(PoleTrojkataw3D)
+project(STOS)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -11,3 +11,4 @@ add_executable(przecinanieOkr przecinanieOkr.cpp)
 add_executable(sort3liczb sort3liczb.cpp)
 add_executable(wzHerona wzHerona.cpp)
 add_executable(pierwiastkiRownaniaKwadrat pierwiastkiRownaniaKwadrat.cpp)
+add_executable(ekonomicznosc ekonomicznosc.cpp)
