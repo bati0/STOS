@@ -34,15 +34,14 @@ int main() {
         while (abs(w) <= n / 2)            //111    petla dziala dla w zakresie od n/2 do 0     //222
         {
 
-            for (int i = 0; i < ile_poziomo; ++i) {
-                for (int i = 0; i < k2; ++i) cout << "-";//111    znaki '-'
-                for (int i = 0; i < k1; ++i) cout << "#";//111    znaki '#'
-                for (int i = 0; i < k2; ++i) cout << "-";//111    znaki '-'
+            for (int h = 0; h < ile_poziomo; ++h) {
+                for (int j = 0; j < k2; ++j) cout << zn2;//111    znaki '-'
+                for (int k = 0; k < k1; ++k) cout << zn1;//111    znaki '#'
+                for (int l = 0; l < k2; ++l) cout << zn2;//111    znaki '-'
             }
-            cout << endl;
-            //111    przejdz do nowej linii
+            cout << endl;         //111    przejdz do nowej linii
             w--;                 // zmiana numeru wiersza
-            // ustalenie ilosci zn1 i zn2 dla kolejnego wiersza kafelka
+                                 // ustalenie ilosci zn1 i zn2 dla kolejnego wiersza kafelka
             k2 = abs(w);                   //111                                           //222
             k1 = n - (2 * k2);                   //111
 
