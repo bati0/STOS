@@ -34,7 +34,18 @@ int sortuj_nazw(osoba **tablica, int liczba){
             }
     return 0;
 }
-
+int sortuj_nazw_imie(osoba **tablica, int liczba){
+    int i, j;
+    osoba *temp;
+    for(i = 0; i < liczba; i++)
+        for(j = 0; j < liczba; j++)
+            if( strcmp(tablica[i]->nazwisko, tablica[j]->nazwisko)<0 && strcmp(tablica[i]->imie, tablica[j]->imie)<0){
+                temp = tablica[i];
+                tablica[i] = tablica[j];
+                tablica[j] = temp;
+            }
+    return 0;
+}
 /** Funkcja wypisuje elementy tablicy, która zawiera struktury osoba*/
 int wypisz(osoba *tablica, int liczba){
 	while(liczba--){
@@ -66,5 +77,8 @@ int main(){
     cout << endl;
     sortuj_nazw(dane_wsk,4);
     wypisz_wsk(dane_wsk,4);
-	return 0;
+    cout << endl;
+    sortuj_nazw_imie(dane_wsk, 4);
+    wypisz_wsk(dane_wsk,4);
+    return 0;
 }
